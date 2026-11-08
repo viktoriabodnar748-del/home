@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME — Затишний дім</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#menu" data-bs-offset="100" tabindex="0">
+
+    <nav class="navbar navbar-light fixed-top bg-white shadow" id="mainNavbar">
+        <div class="container">
+
+            <a class="navbar-brand" href="#home">HOME<span>.</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#menu" aria-controls="menu" aria-label="Відкрити меню">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="menu"
+                aria-labelledby="menuLabel" data-bs-scroll="true">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="menuLabel">HOME.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрити"></button>
+                </div>
+
+                <div class="offcanvas-body">
+
+                    <ul class="navbar-nav mx-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home" data-bs-dismiss="offcanvas">Головна</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#interior" data-bs-dismiss="offcanvas">Інтер'єр</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Наші кімнати
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#living" data-bs-dismiss="offcanvas">Вітальня</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#bedroom" data-bs-dismiss="offcanvas">Спальня</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#kitchen" data-bs-dismiss="offcanvas">Кухня</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-bs-dismiss="offcanvas">Про нас</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts" data-bs-dismiss="offcanvas">Контакти</a>
+                        </li>
+
+                    </ul>
+
+                    <form class="d-flex mt-3" id="searchForm" role="search">
+                        <input class="form-control me-2" id="searchInput" type="search"
+                            placeholder="Пошук..." aria-label="Пошук">
+                        <button class="btn search-btn" type="submit">Знайти</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="home" class="hero section">
+        <div class="container">
+            <div class="hero-content">
+
+                <p class="subtitle">ЗАТИШОК ПОЧИНАЄТЬСЯ ТУТ</p>
+
+                <h1>Створи дім,<br>у який хочеться повертатися</h1>
+
+                <p>Надихайся красивими інтер'єрами та створюй власний простір комфорту.</p>
+
+                <a href="#interior" class="btn main-btn">Переглянути інтер'єри</a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="interior" class="section">
+        <div class="container">
+
+            <h2>Наші інтер'єри</h2>
+            <p class="section-text">Знайди натхнення для свого майбутнього дому.</p>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="room-card">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0" alt="Вітальня">
+                        <h4>Вітальня</h4>
+                        <p>Місце для відпочинку та теплих зустрічей.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="room-card">
+                        <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0" alt="Спальня">
+                        <h4>Спальня</h4>
+                        <p>Особистий простір спокою та гармонії.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="room-card">
+                        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f" alt="Сучасна кухня">
+                        <h4>Кухня</h4>
+                        <p>Місце, де народжуються смачні моменти.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="living" class="room-section section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0"
+                        alt="Затишна вітальня" class="room-image">
+                </div>
+
+                <div class="col-md-6">
+                    <h2>Затишна вітальня</h2>
+                    <p>Вітальня — це серце дому. Тут можна відпочити після насиченого дня, провести час із сім'єю та зустріти друзів.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="bedroom" class="room-section section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0"
+                        alt="Затишна спальня" class="room-image">
+                </div>
+
+                <div class="col-md-6">
+                    <h2>Комфортна спальня</h2>
+                    <p>Спальня — це місце спокою та відпочинку. М'які кольори, приємне освітлення та зручні меблі створюють особливу атмосферу.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="kitchen" class="room-section section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f"
+                        alt="Сучасна кухня" class="room-image">
+                </div>
+
+                <div class="col-md-6">
+                    <h2>Сучасна кухня</h2>
+                    <p>Кухня — це місце, де поєднуються комфорт, практичність та натхнення для приготування улюблених страв.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="about-section section">
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d"
+                        alt="Дизайн інтер'єру" class="about-img">
+                </div>
+
+                <div class="col-md-6">
+                    <h2>Дім — це більше, ніж стіни</h2>
+
+                    <p>HOME — це простір ідей для створення красивого, комфортного та функціонального житла.</p>
+
+                    <p>Ми віримо, що кожна деталь має значення: від кольору стін до маленьких декоративних елементів.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contacts" class="contacts-section section">
+        <div class="container">
+
+            <h2>Створи свій затишок</h2>
+
+            <p>Надихайся, експериментуй та роби свій дім особливим.</p>
+
+            <a href="#home" class="btn main-btn">На головну</a>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <p>© 2026 HOME. Усі права захищені.</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const searchForm = document.getElementById("searchForm");
+        const searchInput = document.getElementById("searchInput");
+
+        searchForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const searchText = searchInput.value.toLowerCase().trim();
+
+            if (searchText === "") {
+                alert("Введіть слово для пошуку!");
+                return;
+            }
+
+            const sections = Array.from(document.querySelectorAll("section"));
+
+            const foundSection = sections.find(function(section) {
+                return section.innerText.toLowerCase().includes(searchText);
+            });
+
+            if (foundSection) {
+                const offcanvasElement = document.getElementById("menu");
+                const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+
+                if (offcanvas) {
+                    offcanvas.hide();
+                }
+
+                foundSection.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            } else {
+                alert("Нічого не знайдено!");
+            }
+        });
+
+        window.addEventListener("load", function() {
+            const scrollElements = document.querySelectorAll('[data-bs-spy="scroll"]');
+
+            scrollElements.forEach(function(element) {
+                bootstrap.ScrollSpy.getOrCreateInstance(element).refresh();
+            });
+        });
+    </script>
+
+</body>
+</html>
